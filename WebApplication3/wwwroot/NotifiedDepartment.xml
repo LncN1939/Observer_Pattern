@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Laboratory>
+  <LAB1>
+    <EmployeeId>2</EmployeeId>
+    <EmployeeId>0001</EmployeeId>
+  </LAB1>
+  <LAB2>
+    <EmployeeId>2</EmployeeId>
+    <EmployeeId>0001</EmployeeId>
+  </LAB2>
+  <LAB3>
+    <EmployeeId>2</EmployeeId>
+    <EmployeeId>0001</EmployeeId>
+  </LAB3>
+</Laboratory>

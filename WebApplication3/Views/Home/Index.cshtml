@@ -1,0 +1,75 @@
+﻿<!Doctype html>
+<html>
+<style>
+    .btn {
+        background-color: #4CAF50;
+        border: 1px solid green;
+        color: white;
+        padding: 10px 24px;
+        cursor: pointer;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .textBox, select {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .submitSep {
+        width: 80%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .submitSep:hover {
+            background-color: #45a049;
+        }
+
+    .divclass {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-top: 50px;
+    }
+</style>
+<body>
+    <h1>Departments</h1>
+
+    <div class="btn-group">
+        @using (Html.BeginForm("LAB1", "Home"))
+        {
+            <input type="submit" value="LAB #1" class="btn" />
+        }
+        @using (Html.BeginForm("LAB2", "Home"))
+        {
+            <input type="submit" value="LAB #2" class="btn" />
+        }
+        @using (Html.BeginForm("LAB3", "Home"))
+        {
+            <input type="submit" value="LAB #3" class="btn" />
+        }
+        <h1>@ViewBag.Dept</h1>
+    </div>
+
+    @using (Html.BeginForm("EmployeeSeparate", "Home"))
+    {
+        <div class="divclass">
+
+            <label for="lname" style="font-size:xx-large">Employee Separation</label>
+            <input type="text" id="lname" name="EmployeeId" placeholder="ID PC.." class="textBox">
+            <input type="submit" value="Employee Separate" class="submitSep" />
+        </div>
+    }
+</body>
+</html>
