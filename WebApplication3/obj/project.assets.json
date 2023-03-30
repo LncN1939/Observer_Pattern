@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Leo\\source\\repos\\WebApplication3\\WebApplication3\\ObserverPattern.csproj",
+      "projectUniqueName": "C:\\Users\\Leo\\Downloads\\Programming\\DP\\Observer_Pattern\\WebApplication3\\ObserverPattern.csproj",
       "projectName": "ObserverPattern",
-      "projectPath": "C:\\Users\\Leo\\source\\repos\\WebApplication3\\WebApplication3\\ObserverPattern.csproj",
+      "projectPath": "C:\\Users\\Leo\\Downloads\\Programming\\DP\\Observer_Pattern\\WebApplication3\\ObserverPattern.csproj",
       "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Leo\\source\\repos\\WebApplication3\\WebApplication3\\obj\\",
+      "outputPath": "C:\\Users\\Leo\\Downloads\\Programming\\DP\\Observer_Pattern\\WebApplication3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -10,6 +10,6 @@ namespace WebApplication3.Subject
     {
         void AddObserver(IResignationObserver observer);
         void RemoveObserver(IResignationObserver observer);
-        void NotifyObserver(string employeeId);
+        void NotifyObserver(string pcid);
     }
 }

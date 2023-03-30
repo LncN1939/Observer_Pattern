@@ -61,11 +61,11 @@ namespace WebApplication3.Controllers
         }
 
         [HttpPost]
-        public void EmployeeSeparate(string EmployeeId)
+        public void EmployeeSeparate(string PCid)
         {
             // does something related to employee seperate
-
-            _resignation.NotifyObserver(EmployeeId);
+            _resignation.NotifyObserver(PCid);
+            Console.WriteLine("Laboratorios notificados");
         }
 
         public IActionResult Privacy()

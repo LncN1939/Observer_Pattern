@@ -1,15 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Laboratory>
   <LAB1>
-    <EmployeeId>2</EmployeeId>
-    <EmployeeId>0001</EmployeeId>
+    <PCid>12</PCid>
+    <PCid>1</PCid>
+    <PCid>1</PCid>
+    <PCid>12</PCid>
   </LAB1>
   <LAB2>
-    <EmployeeId>2</EmployeeId>
-    <EmployeeId>0001</EmployeeId>
+    <PCid>12</PCid>
+    <PCid>1</PCid>
+    <PCid>1</PCid>
+    <PCid>12</PCid>
   </LAB2>
   <LAB3>
-    <EmployeeId>2</EmployeeId>
-    <EmployeeId>0001</EmployeeId>
+    <PCid>12</PCid>
+    <PCid>1</PCid>
+    <PCid>1</PCid>
+    <PCid>12</PCid>
   </LAB3>
 </Laboratory>

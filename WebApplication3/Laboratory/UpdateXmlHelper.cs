@@ -8,7 +8,7 @@ namespace WebApplication3.Departaments
 {
     public class UpdateXmlHelper
     {
-        public void UpdateNotificationDetail(string laboratory, string employeeId)
+        public void UpdateNotificationDetail(string laboratory, string pcid)
         {
             XDocument xDocument = XDocument.Load("wwwroot/NotifiedDepartment.xml");
             XElement lab = xDocument.Element("Laboratory");
@@ -16,11 +16,11 @@ namespace WebApplication3.Departaments
             if (elementFinance == null)
             {
                 lab.Add(new XElement(laboratory,
-                           new XElement("EmployeeId", employeeId)));
+                           new XElement("PCid", pcid)));
             }
             else
             {
-                elementFinance.Add(new XElement("EmployeeId", employeeId));
+                elementFinance.Add(new XElement("PCid", pcid));
             }
             xDocument.Save("wwwroot/NotifiedDepartment.xml");
         }

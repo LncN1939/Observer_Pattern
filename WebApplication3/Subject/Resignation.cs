@@ -19,11 +19,11 @@ namespace WebApplication3.Subject
             observerList.Add(observer);
         }
 
-        public void NotifyObserver(string employeeId)
+        public void NotifyObserver(string pcid)
         {
             foreach (var observer in observerList)
             {
-                observer.Notify(employeeId);
+                observer.Notify(pcid);
             }
         }
 

@@ -22,13 +22,13 @@ namespace WebApplication3.Departaments
         {
             // calculates salary
         }
-        public void Notify(string employeeId)
+        public void Notify(string pcid)
         {
             // whenever employee resigns notification will come here.
             // Finance department will take necessary action accordingly.
 
             UpdateXmlHelper xmlHelper = new UpdateXmlHelper();
-            xmlHelper.UpdateNotificationDetail("LAB1", employeeId);
+            xmlHelper.UpdateNotificationDetail("LAB1", pcid);
         }
 
     }

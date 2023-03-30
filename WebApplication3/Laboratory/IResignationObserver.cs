@@ -7,6 +7,6 @@ namespace WebApplication3.Departaments
 {
     public interface IResignationObserver
     {
-        void Notify(string employeeId);
+        void Notify(string pcid);
     }
 }

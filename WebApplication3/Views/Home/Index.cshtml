@@ -42,6 +42,46 @@
         padding: 20px;
         margin-top: 50px;
     }
+
+    .popup{
+        width: 400px;
+        background: #fff;
+        border-radius: 6px;
+        position:absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: #333;
+        visibility:hidden;
+        transition: transform 0.4s, top 0.4s;
+    }
+
+    .open-popup {
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%,-50%) scale(1);
+    }
+
+    .popup h2{
+        font-size: 38px;
+        font-weight: 500;
+        margin: 30px 0 10px;
+    }
+
+    .popup button {
+        width: 100%;
+        margin-top: 50px;
+        padding: 10px;
+        background: #6fd649;
+        border: 0;
+        font-size: 18px;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+     }
+
 </style>
 <body>
     <h1>Departments</h1>
@@ -64,12 +104,30 @@
 
     @using (Html.BeginForm("EmployeeSeparate", "Home"))
     {
-        <div class="divclass">
+<div class="divclass">
 
-            <label for="lname" style="font-size:xx-large">Employee Separation</label>
-            <input type="text" id="lname" name="EmployeeId" placeholder="ID PC.." class="textBox">
-            <input type="submit" value="Employee Separate" class="submitSep" />
-        </div>
+    <label for="lname" style="font-size:xx-large">Employee Separation</label>
+    <input type="text" id="lname" name="PCid" placeholder="ID PC.." class="textBox">
+    <input type="submit" value="Employee Separate" class="submitSep" onclick="openPopup()" />
+</div>
     }
+
+    <div class="popup" id="popup">
+        <h2>Done</h2>
+        <p>Laboratory has been notified</p>
+        <button type="button" onclick="closePopup()">OK</button>
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
 </body>
 </html>
